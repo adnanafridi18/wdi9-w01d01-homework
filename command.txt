@@ -1,0 +1,121 @@
+Setup
+Adnans-MacBook-Pro:~ adnanafridi$ mkdir homework
+Adnans-MacBook-Pro:~ adnanafridi$ cd homework
+Adnans-MacBook-Pro:homework adnanafridi$ mkdir homework_part_1
+Adnans-MacBook-Pro:homework adnanafridi$ cd homework_part_1/
+Adnans-MacBook-Pro:homework_part_1 adnanafridi$ touch command.txt
+
+part1
+
+Adnans-MacBook-Pro:homework_part_1 adnanafridi$ mkdir death_star
+Adnans-MacBook-Pro:homework_part_1 adnanafridi$ cd death_star/
+Adnans-MacBook-Pro:death_star adnanafridi$ touch darth_vader.txt
+Adnans-MacBook-Pro:death_star adnanafridi$ touch princess_leia.txt storm_trooper.txt
+Adnans-MacBook-Pro:death_star adnanafridi$ pwd
+/Users/adnanafridi/homework/homework_part_1/death_star
+Adnans-MacBook-Pro:death_star adnanafridi$ ls
+darth_vader.txt		princess_leia.txt	storm_trooper.txt
+Adnans-MacBook-Pro:death_star adnanafridi$ cd ..
+Adnans-MacBook-Pro:homework_part_1 adnanafridi$ mkdir galaxy_far_far_away
+Adnans-MacBook-Pro:homework_part_1 adnanafridi$ cd galaxy_far_far_away/
+Adnans-MacBook-Pro:galaxy_far_far_away adnanafridi$ mkdir tatooine
+Adnans-MacBook-Pro:galaxy_far_far_away adnanafridi$ cd tatooine/
+Adnans-MacBook-Pro:tatooine adnanafridi$ touch luke.txt ben_kenobi.txt
+Adnans-MacBook-Pro:tatooine adnanafridi$ mkdir millenium_falcon
+Adnans-MacBook-Pro:tatooine adnanafridi$ cd millenium_falcon/
+Adnans-MacBook-Pro:millenium_falcon adnanafridi$ touch han_solo.txt chewbaca.txt
+
+Part2
+Adnans-MacBook-Pro:millenium_falcon adnanafridi$ cd ..
+Adnans-MacBook-Pro:tatooine adnanafridi$ mv ben_kenobi.txt obi_wan.txt
+
+Part3
+Adnans-MacBook-Pro:galaxy_far_far_away adnanafridi$ cd tatooine/
+Adnans-MacBook-Pro:tatooine adnanafridi$ ls
+luke.txt		millenium_falcon	obi_wan.txt
+Adnans-MacBook-Pro:tatooine adnanafridi$ cd ..
+Adnans-MacBook-Pro:galaxy_far_far_away adnanafridi$ cd ..
+Adnans-MacBook-Pro:homework_part_1 adnanafridi$ ls death_star/
+darth_vader.txt		princess_leia.txt	storm_trooper.txt
+Adnans-MacBook-Pro:homework_part_1 adnanafridi$ cp death_star/storm_trooper.txt ./
+
+Part4
+Adnans-MacBook-Pro:death_star adnanafridi$ cd ..
+Adnans-MacBook-Pro:homework_part_1 adnanafridi$ cd galaxy_far_far_away/
+Adnans-MacBook-Pro:galaxy_far_far_away adnanafridi$ ls
+tatooine
+Adnans-MacBook-Pro:galaxy_far_far_away adnanafridi$ cd tatooine/
+Adnans-MacBook-Pro:tatooine adnanafridi$ ls
+luke.txt		millenium_falcon	obi_wan.txt
+Adnans-MacBook-Pro:tatooine adnanafridi$ mv luke.txt obi_wan.txt millenium_falcon/
+Adnans-MacBook-Pro:tatooine adnanafridi$ ls
+millenium_falcon
+Adnans-MacBook-Pro:tatooine adnanafridi$ mv millenium_falcon/
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+Adnans-MacBook-Pro:tatooine adnanafridi$ ls
+millenium_falcon
+Adnans-MacBook-Pro:tatooine adnanafridi$ 
+Adnans-MacBook-Pro:tatooine adnanafridi$ mv --help
+mv: illegal option -- -
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+Adnans-MacBook-Pro:tatooine adnanafridi$ cd millenium_falcon/
+Adnans-MacBook-Pro:millenium_falcon adnanafridi$ ls
+chewbaca.txt	han_solo.txt	luke.txt	obi_wan.txt
+Adnans-MacBook-Pro:millenium_falcon adnanafridi$ cp
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+Adnans-MacBook-Pro:millenium_falcon adnanafridi$ cd ..
+Adnans-MacBook-Pro:tatooine adnanafridi$ cd ..
+Adnans-MacBook-Pro:galaxy_far_far_away adnanafridi$ cd cd tatooine/
+-bash: cd: cd: No such file or directory
+Adnans-MacBook-Pro:galaxy_far_far_away adnanafridi$ cd tatooine/
+Adnans-MacBook-Pro:tatooine adnanafridi$ cd millenium_falcon/
+Adnans-MacBook-Pro:millenium_falcon adnanafridi$ cd ..
+Adnans-MacBook-Pro:tatooine adnanafridi$ mv millenium_falcon/galacy_far_far_away/.
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+Adnans-MacBook-Pro:tatooine adnanafridi$ ls
+millenium_falcon
+Adnans-MacBook-Pro:tatooine adnanafridi$ 
+Adnans-MacBook-Pro:tatooine adnanafridi$ mv millenium_falcon/
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+Adnans-MacBook-Pro:tatooine adnanafridi$ ls
+millenium_falcon
+Adnans-MacBook-Pro:tatooine adnanafridi$ mv millenium_falccd ..
+mv: rename millenium_falccd to ../millenium_falccd: No such file or directory
+Adnans-MacBook-Pro:tatooine adnanafridi$ cd ..
+Adnans-MacBook-Pro:galaxy_far_far_away adnanafridi$ cd ..
+Adnans-MacBook-Pro:homework_part_1 adnanafridi$ cd death_star/
+Adnans-MacBook-Pro:death_star adnanafridi$ mv princess_leia.txt millenium_falcon/
+mv: rename princess_leia.txt to millenium_falcon/: No such file or directory
+Adnans-MacBook-Pro:death_star adnanafridi$ mv princess_leia.txt ./millenium_falcon/
+mv: rename princess_leia.txt to ./millenium_falcon/: No such file or directory
+Adnans-MacBook-Pro:death_star adnanafridi$ 
+
+Part5
+Adnans-MacBook-Pro:homework_part_1 adnanafridi$ cd galaxy_far_far_away/
+Adnans-MacBook-Pro:galaxy_far_far_away adnanafridi$ cd tatooine/
+Adnans-MacBook-Pro:tatooine adnanafridi$ cd millenium_falcon/
+Adnans-MacBook-Pro:millenium_falcon adnanafridi$ ls
+chewbaca.txt	han_solo.txt	luke.txt	obi_wan.txt
+Adnans-MacBook-Pro:millenium_falcon adnanafridi$ rm obi_wan.txt 
+Adnans-MacBook-Pro:millenium_falcon adnanafridi$ ls
+chewbaca.txt	han_solo.txt	luke.txt
+
+Part6
+Adnans-MacBook-Pro:millenium_falcon adnanafridi$ cd ..
+Adnans-MacBook-Pro:tatooine adnanafridi$ cd ..
+Adnans-MacBook-Pro:galaxy_far_far_away adnanafridi$ mkdir yavin_4
+Adnans-MacBook-Pro:galaxy_far_far_away adnanafridi$ cd yavin_4/
+Adnans-MacBook-Pro:yavin_4 adnanafridi$ mkdir x_wing
+Adnans-MacBook-Pro:galaxy_far_far_away adnanafridi$ cd ..
+Adnans-MacBook-Pro:homework_part_1 adnanafridi$ cd death_star/
+Adnans-MacBook-Pro:death_star adnanafridi$ mkdir tie_fighter_1 tie_fighter_2 tie_fighter_3
+Adnans-MacBook-Pro:death_star adnanafridi$ ls
+darth_vader.txt		storm_trooper.txt	tie_fighter_2
+princess_leia.txt	tie_fighter_1		tie_fighter_3
+Adnans-MacBook-Pro:death_star adnanafridi$ mv darth_vader.txt tie_fighter_1
+
